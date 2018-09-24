@@ -1,0 +1,11 @@
+<h1>total {{count}} word entered in the form</h1>
+<a href="{% url 'home'%}">start again</a>
+<h1>{{fulltext}}</h1>
+
+<h1>word count</h1>
+{%for word,counttotal in worddictonary %}
+{{word}}
+<br>
+{{counttotal}}
+</br>
+{%endfor%}
